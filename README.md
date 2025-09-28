@@ -20,15 +20,15 @@ It processes text input from the user and provides responses using the OpenAI AP
    cd MY.ChatAppAI
 
 ### 2. Install required NuGet packages:
-   dotnet add package OpenAI
-   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-   dotnet add package Microsoft.Extensions.Configuration
-   dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+  - dotnet add package OpenAI
+  - dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+  - dotnet add package Microsoft.Extensions.Configuration
+  - dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 
 ### 3. Add OpenAI credentials using User Secrets:
-   dotnet user-secrets init
-   dotnet user-secrets set OpenAIKey <your-openai-key>
-   dotnet user-secrets set ModelName <your-model-name>
+  - dotnet user-secrets init
+  - dotnet user-secrets set OpenAIKey <your-openai-key>
+  - dotnet user-secrets set ModelName <your-model-name>
 
 ## Running the application:
    dotnet run
