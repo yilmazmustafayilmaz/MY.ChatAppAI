@@ -1,6 +1,6 @@
 # MY.ChatAppAI
 
-.NET 8 ile geliştirilmiş, OpenAI tabanlı bir konsol sohbet uygulaması.  
+.NET 9 ile geliştirilmiş, OpenAI tabanlı bir konsol sohbet uygulaması.  
 Kullanıcıdan aldığı metin girdilerini OpenAI API ile işleyip yanıt veren bir AI sohbet uygulamasıdır.
 
 ---
