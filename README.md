@@ -16,7 +16,7 @@ It processes text input from the user and provides responses using the OpenAI AP
 
 ## Setup:
 ### 1. Clone the project:
-  - git clone https://github.com/<your-username>/MY.ChatAppAI.git](https://github.com/yilmazmustafayilmaz/MY.ChatAppAI.git
+  - git clone https://github.com/yilmazmustafayilmaz/MY.ChatAppAI.git
   - cd MY.ChatAppAI
 
 ### 2. Install required NuGet packages:
