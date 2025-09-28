@@ -1,49 +1,40 @@
-# MY.ChatAppAI
+MY.ChatAppAI
 
-.NET 9 ile geliştirilmiş, OpenAI tabanlı bir konsol sohbet uygulaması.  
-Kullanıcıdan aldığı metin girdilerini OpenAI API ile işleyip yanıt veren bir AI sohbet uygulamasıdır.
+A console chat application built with .NET 9 using OpenAI.  
+Processes text input from the user and provides responses using the OpenAI API.
 
----
+Features:
+- AI abstraction using Microsoft.Extensions.AI
+- Real-time chat with OpenAI API
+- ChatHistory tracking: System, User, and Assistant roles
+- Streaming response support
 
-## Özellikler
-
-- Microsoft.Extensions.AI kullanarak yapay zeka soyutlaması
-- OpenAI API ile gerçek zamanlı sohbet
-- ChatHistory takibi: System, User ve Assistant rolleri
-- Streaming cevap desteği
-
----
-
-## Önkoşullar
-
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) veya üstü
+Prerequisites:
+- .NET 8 SDK or higher
 - OpenAI API Key
-- Visual Studio Code veya başka bir C# geliştirme ortamı
+- Visual Studio Code or any C# development environment
 
----
+Setup:
+1. Clone the project:
 
-## Kurulum
-
-1. Projeyi klonla:
-
-```bash
-git clone 
-cd MY.ChatAppAI
-
+2. Install required NuGet packages:
 dotnet add package OpenAI
 dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
 dotnet add package Microsoft.Extensions.Configuration
 dotnet add package Microsoft.Extensions.Configuration.UserSecrets
 
+3. Add your OpenAI API key and model name using User Secrets:
 dotnet user-secrets init
 dotnet user-secrets set OpenAIKey <your-openai-key>
 dotnet user-secrets set ModelName <your-model-name>
 
-dotnet run
+
+Run:
+Type your questions in the terminal to get AI responses.
+Example Chat Flow:
 
 Your prompt:
-Hangi kitapları önerirsin?
+Which books would you recommend?
 
 AI Response:
-Merhaba! Hangi türde kitaplar ilginizi çekiyor ve okumak istediğiniz yoğunluk nedir?
-
+Hello! What genre are you interested in, and what reading intensity are you looking for?
